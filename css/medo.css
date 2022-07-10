@@ -1,0 +1,396 @@
+:root {
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+    --Almost-gray: hsl(0deg 0% 41% / 46%);
+    font-family: "Epilogue", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 1.5em;
+    background-color: var(--Almost-White);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--Almost-gray);
+}
+
+@media (max-width: 767px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--Almost-gray);
+    }
+}
+
+.sec2 {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    gap: 30px;
+}
+
+#logo {}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+@media (max-width: 767px) {
+    header .login {
+        display: none;
+        align-items: center;
+        gap: 30px;
+        flex-direction: column-reverse;
+        position: absolute;
+    }
+}
+
+.login .Regester {
+    border: 2px solid var(--Almost-gray);
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.login .Regester:hover {
+    color: black;
+}
+
+.login .loginS:hover {
+    color: black;
+}
+
+.login .loginS {
+    cursor: pointer;
+}
+
+header .sections {
+    display: flex;
+    gap: 30px;
+    width: 97%;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+@media (max-width: 767px) {
+    header .sections {
+        display: none;
+    }
+}
+
+header .sections .feat-parts {
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    top: 54px;
+    left: 110px;
+    box-shadow: 0px 0px 14px 4px #0000001a;
+}
+
+.sections .feat-parts ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 14px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.sections #comp-parts {
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    left: 250px;
+    box-shadow: 0px 0px 14px 4px #0000001a;
+    top: 60px;
+    transition-duration: 1s;
+}
+
+.sections .comp-parts ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 14px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.sections .Features {
+    position: relative;
+}
+
+.sections .Company {
+    position: relative;
+}
+
+.sections .Company:hover::after {
+    border-color: transparent black black transparent;
+}
+
+.sections .Features:hover,
+.Company:hover,
+.Careers:hover,
+.About:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.arrdwn {
+    top: 5px;
+    right: -15px;
+    position: absolute;
+}
+
+.arrdwnc {
+    top: 5px;
+    right: -15px;
+    position: absolute;
+}
+
+.arrup {
+    position: absolute;
+    left: 80px;
+    top: 5px;
+}
+
+.arrupc {
+    position: absolute;
+    left: 80px;
+    top: 5px;
+}
+
+section {
+    display: flex;
+    margin: 2em 6em 0;
+    gap: 4em;
+}
+
+#mobile {
+    display: none;
+}
+
+.imge img {
+    width: 420px;
+}
+
+@media (max-width: 767px) {
+    section {
+        display: flex;
+        margin: 0;
+        gap: 4em;
+        flex-direction: column-reverse;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    #disk {
+        display: none;
+    }
+    #mobile {
+        display: block;
+    }
+    .imge img {
+        width: 100%;
+        margin: 30px 0 0 0;
+    }
+}
+
+.info {}
+
+.info h1 {
+    font-size: 4em;
+    margin-top: 90px;
+}
+
+.info p {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 1px 51px 0 0;
+    color: var(--Medium-Gray);
+    font-weight: 500;
+    margin-right: 85px;
+}
+
+.info span {
+    background-color: black;
+    padding: 20px;
+    border-radius: 18px;
+    color: white;
+    display: inline-block;
+    margin: 25px 0;
+}
+
+.info .icons {
+    margin: 120px 0 0 0;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .info h1 {
+        font-size: 3em;
+        margin-top: 90px;
+        margin: 30px auto;
+        text-align: center;
+    }
+    .info p {
+        font-size: 20px;
+        line-height: 38px;
+        padding: 0;
+        color: var(--Medium-Gray);
+        font-weight: 500;
+        margin-right: 0;
+        text-align: center;
+        padding: 0 35px;
+    }
+    .info span {
+        background-color: black;
+        padding: 20px 30px;
+        border-radius: 18px;
+        color: white;
+        display: block;
+        margin: 25px auto;
+        width: fit-content;
+    }
+    .info .icons {
+        margin: 50px auto 40px;
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        width: max-content;
+    }
+}
+
+.bicon {
+    width: 30px;
+    height: 24px;
+    position: absolute;
+    right: 20px;
+    z-index: 3;
+}
+
+@media (min-width: 767px) {
+    .bicon {
+        display: none;
+    }
+}
+
+.bicon span {
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+.bicon .top0 {
+    top: 0;
+}
+
+.bicon .top10 {
+    top: 10px;
+}
+
+.bicon .top20 {
+    top: 20px;
+}
+
+.bicon .width0 {
+    width: 0;
+    transition: none;
+}
+
+.bicon .rotplas {
+    transform: rotate(45deg);
+}
+
+.bicon .rotmin {
+    transform: rotate(-45deg);
+}
+
+aside {
+    background-color: white;
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    top: 0;
+    flex-direction: column;
+}
+
+@media (min-width: 767px) {
+    aside {
+        display: none;
+    }
+}
+
+aside::before {
+    content: "";
+    position: absolute;
+    width: 67%;
+    height: 100%;
+    background-color: #00000080;
+    left: -156px;
+}
+
+aside .sections {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    justify-content: flex-start;
+    left: 39px;
+    margin: 120px 0 0 0;
+    gap: 50px;
+    color: var(--Almost-gray);
+}
+
+aside .sec2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+aside .login {
+    display: flex;
+    flex-direction: column;
+    width: 150%;
+    gap: 40px;
+    text-align: center;
+}
+
+aside .login .Regester {
+    width: 100%;
+}
+
+aside .sections .feat-parts {
+    background-color: white;
+    border-radius: 10px;
+}
+
+aside .sections .feat-parts ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 14px;
+    font-size: 16px;
+    line-height: 2.8;
+}
+
+aside .sections .comp-parts {
+    background-color: white;
+    left: 250px;
+}
+
+.diactive {
+    display: none;
+}
