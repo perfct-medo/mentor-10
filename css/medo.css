@@ -337,10 +337,10 @@ aside {
 aside::before {
     content: "";
     position: absolute;
-    width: 67%;
+    width: 70%;
     height: 100%;
     background-color: #00000080;
-    left: -156px;
+    left: -70%;
 }
 
 aside .sections {
